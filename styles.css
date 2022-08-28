@@ -1,0 +1,153 @@
+:root {
+    --main-background: hsl(233, 47%, 7%);
+    --card-background: hsl(244, 38%, 16%);
+    --accent: hsl(277, 64%, 61%);
+    --main-paragraph: hsl(0, 0%, 100%, 75%);
+    --stat-headings: hsl(0, 0%, 100%, 60%);
+    --image-color: hsl(275, 90%, 30%, 50%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--main-background);
+    font-size: 15px;
+    color: white;
+}
+
+.container {
+    max-width: 90vw;
+    display: flex;
+    background-color: var(--card-background);
+    border-radius: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+.title {
+    font-size: 2.2rem;
+    max-width: 30rem;
+    width: 90%;
+}
+
+.emphasis {
+    color: var(--accent);
+}
+
+.description {
+    margin-top: 1.5rem;
+    max-width: 22rem;
+    width: 90%;
+    line-height: 1.5rem;
+    color: var(--stat-headings);
+}
+
+.stats-container {
+    font-size: .8rem;
+    display: flex;
+    line-height: 1.5rem;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.stats-companies,
+.stats-templates,
+.stats-queries {
+    max-width: 6rem;
+    color: var(--stat-headings);
+}
+
+.special {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.image {
+    width: 30rem;
+    background: white url(images/image-header-desktop.jpg) center center/cover no-repeat;
+    border-radius: 0 10px 10px 0;
+}
+
+.purple {
+    height: 100%;
+    background-color: var(--image-color);
+    border-radius: 0 10px 10px 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1050px) {
+    body {
+        font-size: .9em;
+    }
+    .content {
+        padding: 2rem 0 3rem 2rem;
+    }
+    .title {
+        font-size: 1.7rem;
+    }
+    .special {
+        font-size: 1.2rem;
+    }
+    .stats-container {
+        gap: 1.5rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column-reverse;
+        max-width: 400px;
+        margin: 5rem auto;
+    }
+    .image {
+        background-image: url(images/image-header-mobile.jpg);
+        height: 20rem;
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+    }
+    .purple {
+        border-radius: 10px 10px 0 0;
+    }
+    .content {
+        align-items: center;
+        padding: 3rem 1rem 2rem 1rem;
+    }
+    .title,
+    .description,
+    .stats-container {
+        text-align: center;
+    }
+    .stats-container {
+        flex-direction: column;
+        padding-right: 0;
+        margin-top: 2rem;
+    }
+}
