@@ -1,6 +1,6 @@
 # Frontend Mentor -Stats preview
 
-This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/iammiracle01/Stats-review)
-- Live Site URL: (https://iammiracle01.github.io/Product-preview-card/)
+- Live Site URL: (https://iammiracle01.github.io/stats-review/)
 
 ## My process
 
